@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #1976d2;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar h2 {
+  margin-left: 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  gap: 25px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Layout */
+.main-container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #f4f4f4;
+  min-height: 100vh;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar.closed {
+  width: 0px;
+  overflow: hidden;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #ddd;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
